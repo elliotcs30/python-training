@@ -48,7 +48,7 @@ print(ord_value) # 25105
 pow_value = pow(2, 3)
 print(pow_value) # 8
 
-# 以四捨五入法取得 x 的近似值 round(x)
+# 以四捨六入法取得 x 的近似值 round(x)
 round_value = round(45.8)
 print(round_value) # 46
 
