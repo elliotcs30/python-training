@@ -1,6 +1,6 @@
 # 大樂透中獎號碼
 # 大樂透中獎號碼為 6 個 1 到 49 之間的數字加 1 個特別號:
-# 撰寫程式取得大樂透中獎號碼，並由小到大顯示方便對獎
+# 撰寫程式取得大樂透中獎號碼，並由小到大顯示方便對獎。
 
 import random as r
 
@@ -15,4 +15,4 @@ for i in range(0, len(list)):
     else:
         print(str(list[i]), end=", ")
 
-print(f"本期大樂透特別號為: {special}")
+print(f"本期大樂透特別號為: {str(special)}")
