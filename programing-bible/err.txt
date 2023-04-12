@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File ".\7.5.1 traceback.py", line 14, in <module>
+    CheckSpeed(speed) # 檢查速度
+  File ".\7.5.1 traceback.py", line 8, in CheckSpeed
+    raise Exception("speed slow!") # 拋出 Exception 型別例外
+Exception: speed slow!
+Traceback (most recent call last):
+  File ".\7.5.1 traceback.py", line 14, in <module>
+    CheckSpeed(speed) # 檢查速度
+  File ".\7.5.1 traceback.py", line 10, in CheckSpeed
+    raise Exception("speed fast!") # 拋出 Exception 型別例外
+Exception: speed fast!
