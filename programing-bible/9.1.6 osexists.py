@@ -17,7 +17,7 @@
 
 import os
 
-filename = os.path.abspath("osexists.py")
+filename = os.path.abspath("demo.txt")
 
 if os.path.exists(filename): # 檢查檔案是否存在
     print(f"完整路徑名稱: {filename}")
@@ -33,3 +33,6 @@ else:
             print("結束程式!")
     except:
         print("請輸入Y/N")
+
+# 完整路徑名稱: C:\...\...\Doc...\Git...\python-training\programing-bible\demo.txt
+# 檔案大小: 3
