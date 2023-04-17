@@ -10,4 +10,4 @@ headers = {
 
 # 將自訂表頭加入 GET 請求中
 r = requests.get(url, headers=headers)
-print(r)
+print(r) # <Response [200]>
