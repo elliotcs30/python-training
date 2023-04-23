@@ -10,7 +10,7 @@ from selenium import webdriver
 
 # 設定 facebook 登入資訊
 url = 'https://www.facebook.com/'
-email = 'email@gamil.com'
+email = 'email@gmail.com'
 password = 'password'
 
 # 建立瀏覽器物件
@@ -21,6 +21,6 @@ driver.maximize_window()
 driver.get(url)
 
 # 執行自動登入動作
-driver.find_element_by_id('email').send_keys(email) # 輸入郵件
-driver.find_element_by_id('pass').send_keys(password) # 輸入密碼
-driver.find_element_by_name('login').click()
+driver.find_element('id', 'email').send_keys(email) # 輸入郵件
+driver.find_element('id', 'pass').send_keys(password) # 輸入密碼
+driver.find_element('name', 'login').click()
