@@ -2,7 +2,7 @@ import sqlite3
 conn = sqlite3.connect('test.sqlite') # 建立資料庫連線
 
 cursor = conn.execute('select * from contact')
-rows = cursor.fetchall()
+rows = cursor.fetchall()  # or fetchone() 顯示資料表中第一筆資料
 
 # 顯示原始資料
 print(rows)
