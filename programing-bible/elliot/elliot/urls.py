@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from elliotapp.views import elliothello, sayhello, hello3
+from elliotapp.views import elliothello, sayhello, hello3, homepage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', elliothello),
     path('sayhello/<str:username>', sayhello),
     path('hello3/<str:username>', hello3),
+    path('home/<str:username>', homepage)
 ]
