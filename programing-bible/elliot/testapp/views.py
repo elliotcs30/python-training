@@ -25,3 +25,11 @@ def dice(request):
     
     # 使用 locals() 傳遞所有的區域變數
     return render(request, "dice.html", locals())
+
+# 顯示員工資料
+def show(request):
+    person1 = { "name" : "Elliot", "phone" : "088-1234567", "age" : 18 }
+    person2 = { "name" : "Bonnie", "phone" : "099-1234567", "age" : 22 }
+    person3 = { "name" : "Gina", "phone" : "081-1234567", "age" : 22}
+    persons = [ person1, person2, person3 ]
+    return render(request, "show.html", locals())

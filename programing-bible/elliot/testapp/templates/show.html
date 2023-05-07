@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>顯示員工資料</title>
+    </head>
+    <body>
+        {% for person in persons %}
+            <h2> 第 {{forloop.counter}} 位員工</h2>
+            <ul>
+                <li>姓名: {{person.name}}</li>
+                <li>手機: {{person.phone}}</li>
+                <li>年齡: {{person.age}}</li>
+            </ul>
+        {% endfor %}
+    </body>
+</html>
