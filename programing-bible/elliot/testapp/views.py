@@ -39,3 +39,16 @@ def djget(request):
     name = request.GET['name']
     city = request.GET['city']
     return render(request, "djget.html", locals())
+
+# 使用 POST 傳遞參數值
+def djpost(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        
+        if username == 'elliot' and password == '123456':
+            return HttpResponse('歡迎光臨本網站！')
+        else:
+            return HttpResponse('帳號或密碼錯誤！')
+    else:
+        return render(request, 'djpost.html', locals())
