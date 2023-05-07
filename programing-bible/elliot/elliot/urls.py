@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from elliotapp.views import elliothello, homepage
-from testapp.views import sayhello, hello3, hello4, dice, show
+from testapp.views import sayhello, hello3, hello4, dice, show, djget
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +27,5 @@ urlpatterns = [
     path('hello4/<str:username>', hello4),
     path('dice/', dice),
     path('show/', show),
+    path('djget', djget),
 ]

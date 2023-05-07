@@ -33,3 +33,9 @@ def show(request):
     person3 = { "name" : "Gina", "phone" : "081-1234567", "age" : 22}
     persons = [ person1, person2, person3 ]
     return render(request, "show.html", locals())
+
+# 使用 GET 傳遞參數值
+def djget(request):
+    name = request.GET['name']
+    city = request.GET['city']
+    return render(request, "djget.html", locals())
