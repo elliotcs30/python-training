@@ -26,6 +26,12 @@
     python3 manage.py migrate # 若有修正 models.py 檔後, 必須 migrate 
 ```
 
+# 建立管理者帳號和密碼
+```shell
+    account: admin
+    password: password
+```
+
 # 啟動伺服器
 ```shell
     python  manage.py runserver # windows
