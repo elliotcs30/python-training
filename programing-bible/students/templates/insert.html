@@ -6,7 +6,7 @@
     </head>
     <body>
         <h2>新增資料</h2>
-        <form method="post" action="/insert">
+        <form method="post" action="/insert/">
             {% csrf_token %}
             <p>姓名：<input type='text' name='name' /></p>
             <p>性別：<input type='text' name='sex' /></p>

@@ -48,7 +48,7 @@ def modify(request): # 修改資料
         birthday = unit.cBirthday
         email = unit.cEmail
         phone = unit.cPhone
-        addr = unit.cAddress
+        addr = unit.cAddr
         return render(request, "modify.html", locals())
 
 def delete(request, id=None):
