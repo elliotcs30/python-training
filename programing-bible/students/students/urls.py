@@ -22,4 +22,7 @@ urlpatterns = [
     path('listone/', views.listone),
     path('listall/', views.listall),
     path('listall2/', views.listall2),
+    path('insert/', views.insert),
+    path('modify/', views.modify),
+    path('delete/', views.delete),
 ]
