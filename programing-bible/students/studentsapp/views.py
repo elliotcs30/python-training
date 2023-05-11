@@ -10,7 +10,7 @@ def listone(request):
     return render(request, "listone.html", locals())
 
 def listall(request):
-    students = student.objects.all().order_by('id') # 讀取資料表, 依 id 遞增排序
+    students = student.objects.all().order_by('-id') # 讀取資料表, 依 id 遞增排序
     return render(request, "listall.html", locals())
 
 def insert(request): # 新增資料
