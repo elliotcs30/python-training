@@ -23,3 +23,31 @@
     python manage.py startapp newsapp # windows
     python3 manage.py startapp newsapp # mac
 ```
+
+# 建立 models
+
+# 建立 migration 資料檔
+```shell
+    # 若有修正 models.py 檔案, 必須 migrate
+    python manage.py makemigrations # windows
+    python3 manage.py makemigrations # mac
+```
+
+# 模型與資料庫同步
+```shell
+    # 若有修正 models.py 檔案, 必須 migrate
+    python manage.py migrate # windows
+    python3 manage.py migrate # mac
+```
+
+# 建立管理者帳號和密碼
+```shell
+    accrount: admin
+    password: password
+```
+
+# 啟動伺服器
+```shell
+    python manage.py runserver # windows
+    python3 manage.py runserver # mac
+```
