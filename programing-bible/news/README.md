@@ -26,6 +26,10 @@
 
 # 建立 models
 
+# Url 配置檔加入 path
+
+# 建立 templates 資料夾存放模板
+
 # 建立 migration 資料檔
 ```shell
     # 若有修正 models.py 檔案, 必須 migrate
@@ -42,6 +46,8 @@
 
 # 建立管理者帳號和密碼
 ```shell
+    python manage.py createsuperuser # windows
+    python3 manage.py createsuperuser # mac
     accrount: admin
     password: password
 ```
