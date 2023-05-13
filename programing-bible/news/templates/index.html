@@ -11,7 +11,7 @@
             </tr>
             {% for unit in newsunits %}
                 <tr class="alt">
-                    <td><div class="typeblock">【 unit.catego 】</div></td>
+                    <td><div class="typeblock">【 {{unit.catego}} 】</div></td>
                     <td><a href="/detail/{{unit.id}}/">{{unit.title}}</a></td>
                     <td>{{ unit.pubtime }}</td>
                     <td>{{ unit.press }}</td>
