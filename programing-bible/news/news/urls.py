@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from newsapp import views
 
 urlpatterns = [
+    path('', views.index),  #不帶參數的首頁(預設第1頁)
+    path('index/<pageindex>/', views.index), # 帶參數的頁面
+    path('detail/<detailid>/', views.detail), # 詳細頁面
     path('admin/', admin.site.urls),
 ]
